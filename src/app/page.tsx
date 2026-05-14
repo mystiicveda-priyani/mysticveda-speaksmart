@@ -30,6 +30,7 @@ import Link from "next/link";
 const levels = [
   {
     title: "Beginner",
+    href: "/beginner",
     icon: "🌱",
     description:
       "Start with everyday words and simple sentences used in real Indian conversations.",
@@ -40,6 +41,7 @@ const levels = [
   },
   {
     title: "Intermediate",
+    href: "/intermediate",
     icon: "✨",
     description:
       "Speak smartly in offices and meetings with professional phrases and clear pronunciation.",
@@ -50,6 +52,7 @@ const levels = [
   },
   {
     title: "Advanced",
+    href: "/advanced",
     icon: "🪔",
     description:
       "Master interviews, presentations, and refined vocabulary used by confident speakers.",
@@ -101,7 +104,7 @@ export default function Home() {
         {/* CTA */}
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
           <Link
-            href="#levels"
+            href="/beginner"
             className="rounded-full bg-gradient-to-r from-amber-500 via-rose-500 to-violet-600 px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-rose-200 transition-transform hover:scale-105 sm:text-base"
           >
             Start Learning
@@ -136,13 +139,13 @@ export default function Home() {
                 {level.description}
               </p>
 
-              <button
-                type="button"
+              <Link
+                href={level.href}
                 className={`mt-6 inline-flex items-center justify-center gap-2 rounded-full ${level.button} px-5 py-2.5 text-sm font-semibold text-white shadow-md transition-transform group-hover:scale-105`}
               >
                 Start Learning
                 <span aria-hidden>→</span>
-              </button>
+              </Link>
             </article>
           ))}
         </section>
