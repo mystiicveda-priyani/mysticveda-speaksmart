@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="mvBrand" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="50%" stop-color="#F43F5E" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+    <linearGradient id="mvPetal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded gradient badge -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#mvBrand)" />
+
+  <!-- Soft inner glow -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="white" fill-opacity="0.08" />
+
+  <!-- Lotus petals (spiritual mark) -->
+  <g transform="translate(32 36)">
+    <!-- Center petal -->
+    <path d="M0 -16 C 5 -8 5 -2 0 4 C -5 -2 -5 -8 0 -16 Z" fill="url(#mvPetal)" />
+    <!-- Left petals -->
+    <path d="M-4 -12 C -10 -6 -12 0 -8 6 C -3 2 -1 -4 -4 -12 Z" fill="url(#mvPetal)" opacity="0.85" />
+    <path d="M-10 -6 C -16 -2 -16 6 -10 8 C -7 4 -7 -2 -10 -6 Z" fill="url(#mvPetal)" opacity="0.7" />
+    <!-- Right petals -->
+    <path d="M4 -12 C 10 -6 12 0 8 6 C 3 2 1 -4 4 -12 Z" fill="url(#mvPetal)" opacity="0.85" />
+    <path d="M10 -6 C 16 -2 16 6 10 8 C 7 4 7 -2 10 -6 Z" fill="url(#mvPetal)" opacity="0.7" />
+    <!-- Base -->
+    <ellipse cx="0" cy="8" rx="10" ry="2.2" fill="#ffffff" fill-opacity="0.9" />
+  </g>
+
+  <!-- Subtle MV monogram dot -->
+  <circle cx="32" cy="18" r="2" fill="#ffffff" fill-opacity="0.9" />
+</svg>
