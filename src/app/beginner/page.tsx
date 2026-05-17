@@ -20,7 +20,7 @@ export default function BeginnerPage() {
   const loadWords = useCallback(async () => {
     setLoading(true); 
     setError(null);
-    try {
+    try { 
       const data = await fetchRandomWords("beginner", 5);
       setWords(data);
     } catch (err) {
