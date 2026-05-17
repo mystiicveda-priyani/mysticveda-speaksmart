@@ -18,7 +18,7 @@ export default function BeginnerPage() {
   const [error, setError] = useState<string | null>(null);
 
   const loadWords = useCallback(async () => {
-    setLoading(true);
+    setLoading(true); 
     setError(null);
     try {
       const data = await fetchRandomWords("beginner", 5);
